@@ -211,11 +211,3 @@ ax.set_ylabel("购买数量", fontsize=12)
 ax.set_title("单价与购买数量关系", fontsize=14, fontweight="bold")
 st.pyplot(fig)
 
-# -------------------- 原始数据预览 --------------------
-if st.checkbox("查看筛选后的原始数据", help="可核对筛选条件下的订单明细"):
-  st.subheader("五、原始数据明细")
-  st.dataframe(filtered_df, use_container_width=True, height=300)
-
-# 添加页脚信息
-  st.markdown("---")
-  st.caption(" 2023 超市销售数据分析系统 | 数据更新日期: 2022-03-31")
